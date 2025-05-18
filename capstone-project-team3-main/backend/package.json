@@ -1,0 +1,53 @@
+{
+    "name": "relief-connect-server",
+    "version": "1.0.0",
+    "description": "A disaster relief communication platform to help users register safety statuses and locate loved ones.",
+    "main": "server.js",
+    "scripts": {
+        "test": "jest",
+        "start": "node server.js"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0",
+        "supertest": "^4.0.2"
+    },
+    "author": "Maicol Parr, Emily Miller, and Keely Stevenson",
+    "license": "ISC",
+    "eslintConfig": {
+        "parserOptions": {
+            "ecmaVersion": 6
+        },
+        "env": {
+            "node": true
+        },
+        "extends": "eslint:recommended",
+        "rules": {
+            "no-console": "off",
+            "semi": [
+                "error",
+                "always",
+                {
+                    "omitLastInOneLineBlock": true
+                }
+            ],
+            "camelcase": [
+                "error"
+            ]
+        }
+    },
+    "dependencies": {
+        "axios": "^1.7.9",
+        "cookie-parser": "^1.4.6",
+        "dotenv": "^16.4.5",
+        "express": "^4.17.2",
+        "express-flash": "^0.0.2",
+        "express-handlebars": "^6.0.2",
+        "express-session": "^1.18.0",
+        "mongoose": "^8.10.1",
+        "nodemon": "^3.1.9",
+        "passport": "^0.7.0",
+        "passport-google-oauth20": "^2.0.0",
+        "path": "^0.12.7",
+        "pino": "^9.6.0"
+    }
+}
