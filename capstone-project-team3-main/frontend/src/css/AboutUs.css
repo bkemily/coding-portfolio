@@ -1,0 +1,14 @@
+/* AboutUs.css */
+
+.about-page {
+	display: flex;
+	flex-direction: column;
+	transition: margin-left 0.3s ease;
+}
+
+#aboutus-content {
+	padding: 20px;
+	margin-top: 60px; /* Adjust based on the height of the menu button */
+	flex: 1;
+	overflow-y: auto;
+}

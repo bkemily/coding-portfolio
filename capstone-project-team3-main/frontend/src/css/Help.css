@@ -1,0 +1,21 @@
+/* Help.css */
+.help-page {
+	display: flex;
+	flex-direction: column;
+}
+
+
+#help-content {
+	padding: 20px;
+	margin-top: 60px; /* Adjust based on the height of the menu button */
+	flex: 1;
+	overflow-y: auto;
+}
+
+input, textarea {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}

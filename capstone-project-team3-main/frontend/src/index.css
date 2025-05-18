@@ -1,0 +1,317 @@
+/* Page Document CSS */
+/* Ensure the main content is pushed to the right */
+#main-content {
+    margin-left: 220px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Let height grow naturally */
+  }
+  
+  #root {
+    min-height: 93.5vh; /* allow full-page layout */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  main {
+    flex: 1;
+    width: 100%;
+  }
+
+.container {
+    max-width: 80rem !important;
+    margin-bottom: 25px; /* Ensures spacing below navbar */
+    margin-top: 3rem !important; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.sw-container {
+    max-width: 80rem !important;
+    margin-top: 3rem !important; /* Adjust as needed */
+    margin-bottom: 25px; /* Ensures spacing below navbar */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#guides-container {
+    max-width: 1200px;
+}
+
+.required-label::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fonts */
+h1 {
+    font-size: 30px !important;
+    color: rgb(35, 55, 180) !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    /* or font-weight: 700; */
+}
+
+.sidebar .h1-title {
+    font-size: 22px !important;
+    color: #a8c6f5 !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    /* or font-weight: 700; */
+}
+
+h2 {
+    font-size: 26px !important;
+    color: #333 !important;
+    text-align: justify;
+}
+
+h3 {
+    font-size: 22px !important;
+    color: #333 !important;
+    text-align: justify;
+}
+
+h4 {
+    font-size: 18px !important;
+    color: #333 !important;
+    text-align: justify !important;
+}
+
+p {
+    font-size: 16px !important;
+    color: #333 !important;
+    text-align: justify !important;
+}
+
+/* Buttons */
+button {
+    background-color: rgb(35,55,180);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(23, 23, 68, 0.8);
+}
+
+.menu-btn {
+	display: block;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 20px;
+	position: fixed;
+	top: 20px;
+	left: 10px;
+	z-index: 1000;
+}
+
+/* Navbar CSS*/
+.small-navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+#navbar {
+    padding: 0.5rem;
+    background-color: rgb(35, 55, 180);
+    /*position: fixed;
+     Fixes it to the top */
+    width: 100vw;
+    /* Full width */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    /* Ensures it's on top */
+}
+
+#navbar-logo {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+#navbar-intro {
+    display: flex;
+    margin: 0rem 1rem;
+    margin-right: 0;
+}
+
+#navbar-header {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    white-space: nowrap;
+}
+
+#navbar-title,
+#page-title {
+    display: flex;
+    font-size: 1.5rem;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    color: white;
+}
+
+#navbar-subtitle{
+    display: flex;
+    font-size: 22px;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    color: white;
+}
+
+#navbar-title:hover {
+    color: rgb(226, 230, 234);
+}
+
+#navbarSupportedContent {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#navbar-page-links {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-item {
+    padding: 0.5rem 0.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: large;
+    white-space: nowrap;
+    white-space: nowrap;
+}
+
+.nav-link {
+    padding: 0;
+    color: rgb(255, 255, 255) !important;
+}
+
+.nav-link:hover {
+    color: rgb(213, 216, 219) !important;
+}
+
+.navbar-toggler {
+    margin-left: auto !important;
+    align-self: center;
+    font-size: 2rem !important; /* Increases the button size */
+    color: white !important;
+    border: none;
+    background: none;
+    margin: 0rem 1rem;
+    margin-left: auto;
+
+}
+
+/*Buttons CSS*/
+
+button {
+    background-color: rgb(35, 55, 180);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(23, 23, 68, 0.8);
+}
+
+/*Buttons CSS*/
+
+btn-primary {
+    background-color: rgb(35, 55, 180) !important;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+btn btn-light{
+    background-color: rgb(255,255,255) !important;
+}
+
+button {
+    background-color: rgb(35, 55, 180);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(23, 23, 68, 0.8);
+}
+
+/* Resource Buttons */
+.resource-button {
+    background-color: rgb(35, 55, 180);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.resource-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Footer CSS*/
+footer {
+    width: 100%;
+    margin-top: auto;
+    z-index: 1000;
+}
+
+.footer-text {
+    background-color: rgb(230, 228, 228);
+}

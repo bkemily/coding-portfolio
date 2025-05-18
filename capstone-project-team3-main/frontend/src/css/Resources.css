@@ -1,0 +1,78 @@
+/* Resources.css */
+
+.map-placeholder {
+    width: 100%;
+    height: 400px;
+    background-color: #e0e0e0;
+    border: 2px dashed #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Navigation Buttons on individual Resource Pages */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds space between buttons */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Ensures buttons wrap on smaller screens */
+}
+
+.nav-buttons button {
+    background-color: rgb(35,55,180);
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-buttons button:hover {
+    background-color: rgba(23, 23, 68, 0.8);
+}
+
+/* Resources Map Styling */
+
+.map-placeholder {
+    width: 100%;
+    height: 400px; /* Ensures the container does not grow */
+    background-color: #e0e0e0;
+    border: 2px dashed #aaa;
+    position: relative; /* Important for child containment */
+}
+
+#map {
+    width: 100%;
+    height: 100%; /* Forces the map to match its container */
+    position: absolute; /* Ensures it does not expand beyond the parent */
+    top: 0;
+    left: 0;
+}
+
+.popup-content {
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: left !important;
+    display: block;
+    max-width: 250px; /* Adjust the width as needed */
+}
+
+.popup-content h3, .popup-content p {
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: left !important;
+    display: block;
+}

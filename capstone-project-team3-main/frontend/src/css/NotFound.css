@@ -1,0 +1,25 @@
+
+/* Main container */
+.not-found-container {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 0 0px;
+}
+
+.not-found {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 1200px;
+	text-align: center;
+	align-items: center !important;
+	padding: 30px 50px 30px; /* Ensures smooth spacing between sections */
+	background-color: white; /* Keeps it distinct from the hero section */
+}
+
+.fish-image {
+	width: 100%;
+}

@@ -1,0 +1,14 @@
+.fish-captcha {
+	display: grid;
+	grid-template-columns: repeat(3, 100px); /* Adjust size as needed */
+	grid-template-rows: repeat(3, 100px);
+	gap: 2px;
+}
+
+.piece {
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+	cursor: pointer;
+	transition: transform 0.3s;
+}

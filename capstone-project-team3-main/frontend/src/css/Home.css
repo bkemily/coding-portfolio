@@ -1,0 +1,91 @@
+/* Home.css */
+
+
+/* Main container */
+.home-container {
+    padding: 1.25rem;
+    background: white;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* ✅ New line */
+    text-align: center;
+    min-height: calc(100vh - 80px); /* ✅ Adjusted for header height */
+}
+
+/* Title styling */
+.hero-section .hero-title {
+    align-items: center;
+    margin-top: 10px !important;
+    font-size: 48px !important;
+    font-weight: bold !important;
+    color: rgb(35,55,180) !important;
+    text-align: center !important;
+    margin-bottom: 5px !important;
+}
+
+/* Description text */
+.hero-description {
+    align-items: center;
+    font-size: 18px !important;
+    color: #555 !important;
+    max-width: 800px !important;
+    margin-bottom: 30px !important;
+}
+
+/* Buttons*/
+.card-text {
+    font-size: 20px !important;
+    font-weight: bold;
+    color: #333 !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+.card-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card-subcontainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.custom-card {
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    flex: 1 1 200px;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}

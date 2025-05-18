@@ -1,0 +1,66 @@
+/* Match structure of top navbar */
+.small-sidebar-navbar {
+    display: flex;
+    flex-wrap: wrap; /* allow items to wrap */
+    justify-content: center; /* center the items horizontally */
+    align-items: center; /* center the items vertically if needed */
+    width: 100%;
+    gap: 1rem; /* optional spacing between items */
+}
+
+/* Navbar itself */
+#sidebar-navbar {
+    padding: 0.5rem;
+    background-color: rgb(35, 55, 180);
+    width: 100vw;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar links */
+#sidebar-navbar .nav-link {
+    color: white;
+    font-size: 14pt;
+}
+
+/* Hover and focus states */
+#sidebar-navbar .nav-link:hover,
+#sidebar-navbar .nav-link:focus {
+    color: #ddd;
+}
+
+/* Active state */
+#sidebar-navbar .nav-item.active .nav-link {
+    color: white;
+}
+
+/* Toggler button (same as top) */
+.navbar-toggler {
+    /*margin-left: auto !important;*/
+    align-self: center;
+    font-size: 2rem !important;
+    color: white !important;
+    border: none;
+    background: none;
+    margin: 0rem 1rem;
+    margin-right: 1rem !important;
+
+}
+
+.navbar-toggler.custom-toggle-spacing {
+    margin-right: 1.5rem !important; /* or however far you want */
+  }
+  
+
+/*Fixes Font Cut off Issue*/
+@media (min-width: 767px) and (max-width: 897px) {
+    .small-sidebar-navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #sidebar-navbar .nav-link {
+      text-align: center;
+      width: 100%;
+      font-size: 11pt;
+    }
+  }
