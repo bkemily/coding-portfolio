@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uwf.cop3665.tictactoe.GameActivity">
+
+    <TextView
+        android:id="@+id/turn_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/game_grid" />
+
+    <GridLayout
+        android:id="@+id/game_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:useDefaultMargins="true"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_margin="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/turn_text_view" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/gameButton"
+            android:layout_margin="8dp" />
+        <Button
+            android:id="@+id/button2"
+            style="@style/gameButton"
+            android:layout_margin="8dp" />
+        <Button
+            android:id="@+id/button3"
+            style="@style/gameButton"
+            android:layout_margin="8dp" />
+        <Button
+            android:id="@+id/button4"
+            style="@style/gameButton"
+            android:layout_margin="8dp" />
+        <Button
+            android:id="@+id/button5"
+            style="@style/gameButton"
+            android:layout_margin="8dp" />
+        <Button
+            android:id="@+id/button6"
+            style="@style/gameButton"
+            android:layout_margin="8dp" />
+        <Button
+            android:id="@+id/button7"
+            style="@style/gameButton"
+            android:layout_margin="8dp" />
+        <Button
+            android:id="@+id/button8"
+            style="@style/gameButton"
+            android:layout_margin="8dp" />
+        <Button
+            android:id="@+id/button9"
+            style="@style/gameButton"
+            android:layout_margin="8dp" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/new_game_button"
+        style="@style/GameOptionButton"
+        android:layout_marginTop="20dp"
+        android:text="@string/new_game"
+        android:background="@color/banner_color"
+        android:textColor="@color/white"
+        android:onClick="onNewGameClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_grid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
