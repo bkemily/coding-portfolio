@@ -1,0 +1,49 @@
+{
+    "name": "relief-connect",
+    "version": "1.0.0",
+    "description": "A disaster relief communication platform to help users register safety statuses and locate loved ones.",
+    "main": "server.js",
+    "scripts": {
+        "test": "jest",
+        "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+        "start:frontend": "cd frontend && npm start",
+        "start:backend": "cd backend && npm start",
+        "install": "npm run install:frontend && npm run install:backend",
+        "install:frontend": "cd frontend && npm install",
+        "install:backend": "cd backend && npm install"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0",
+        "supertest": "^4.0.2"
+    },
+    "author": "Maicol Parr, Emily Miller, and Keely Stevenson",
+    "license": "ISC",
+    "eslintConfig": {
+        "parserOptions": {
+            "ecmaVersion": 6
+        },
+        "env": {
+            "node": true
+        },
+        "extends": "eslint:recommended",
+        "rules": {
+            "no-console": "off",
+            "semi": [
+                "error",
+                "always",
+                {
+                    "omitLastInOneLineBlock": true
+                }
+            ],
+            "camelcase": [
+                "error"
+            ]
+        }
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.11.8",
+        "bootstrap": "^5.3.3",
+        "concurrently": "^9.1.2",
+        "lucide-react": "^0.485.0"
+    }
+}
